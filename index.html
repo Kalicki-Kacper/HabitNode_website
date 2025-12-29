@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitNode - Support & Legal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box {
+            background: #e0e7ff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+            margin: 1.5rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #f0f4ff;
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .quick-link-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .quick-link-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .quick-link-card h3 {
+            margin-top: 0;
+        }
+
+        .quick-link-card a {
+            text-decoration: none;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background: #fef3c7;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .quick-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HabitNode</h1>
+        <p>Your wellness companion</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            <li><a href="terms_of_use.html">Terms of Use</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>Welcome to HabitNode</h2>
+            <p>HabitNode is your private, secure companion on your wellness journey. All your data stays on your device, ensuring complete privacy and control over your personal information.</p>
+            
+            <div class="info-box">
+                <p><strong>Privacy First:</strong> Your recovery data never leaves your device. We believe your personal health information should remain exactly that - personal.</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="support.html" class="btn">Get Support</a>
+                <a href="privacy_policy.html" class="btn btn-secondary">View Privacy Policy</a>
+            </div>
+        </section>
+
+        <div class="quick-links">
+            <a href="support.html">
+                <div class="quick-link-card">
+                    <h3>📧 Support</h3>
+                    <p>Get help with the app, report issues, or ask questions about features.</p>
+                </div>
+            </a>
+
+            <a href="privacy_policy.html">
+                <div class="quick-link-card">
+                    <h3>🔒 Privacy Policy</h3>
+                    <p>Learn how we protect your privacy and what data we collect (spoiler: very little!).</p>
+                </div>
+            </a>
+
+            <a href="terms_of_use.html">
+                <div class="quick-link-card">
+                    <h3>📄 Terms of Use</h3>
+                    <p>Read our terms and conditions for using HabitNode.</p>
+                </div>
+            </a>
+        </div>
+
+        <section id="support">
+            <h2>Support</h2>
+            <p>Welcome to HabitNode Support. We're here to help you get the most out of your recovery journey.</p>
+
+            <h3>Frequently Asked Questions</h3>
+            <p><strong>How do I get started with HabitNode?</strong></p>
+            <p>Download the app from the App Store, launch it, and follow the onboarding process to set up your recovery plan.</p>
+
+            <p><strong>Is my data secure?</strong></p>
+            <p>Yes, we take your privacy seriously. All data is stored locally on your device and never leaves it. Please see our <a href="privacy_policy.html" style="color: #667eea;">Privacy Policy</a> for more details.</p>
+
+            <p><strong>Can I sync across multiple devices?</strong></p>
+            <p>Currently, HabitNode stores all data locally on your device to ensure maximum privacy. Your data doesn't automatically sync across devices.</p>
+
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:kumkwat_splata.9n@icloud.com" style="color: #667eea;">kumkwat_splata.9n@icloud.com</a></p>
+                <p><strong>Response Time:</strong> We typically respond within 24-48 hours</p>
+                <p>For urgent issues, please mark your email as "Urgent" in the subject line.</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="support.html" class="btn">View Full Support Page</a>
+            </div>
+        </section>
+
+        <section id="privacy">
+            <h2>Privacy Policy</h2>
+            <p><em>Last updated: December 29, 2025</em></p>
+
+            <div class="info-box">
+                <p><strong>Your Privacy is Our Priority</strong></p>
+                <p>HabitNode is designed with privacy at its core. All your personal data stays on your device, and we have no access to it.</p>
+            </div>
+
+            <h3>What We Don't Collect</h3>
+            <ul>
+                <li><strong>No Personal Information:</strong> We do not collect your name, email, or any identifying information</li>
+                <li><strong>No Health Data:</strong> Your recovery metrics and wellness information remain exclusively on your device</li>
+                <li><strong>No Location Data:</strong> We do not collect or track your location</li>
+            </ul>
+
+            <h3>What We Do Collect</h3>
+            <p>We collect anonymous, aggregated analytics through Apple's App Store Connect to improve app performance. This data cannot identify individual users.</p>
+
+            <p><strong>You can opt out of analytics:</strong> Go to Settings > Privacy & Security > Analytics & Improvements > Disable "Share iPhone Analytics"</p>
+
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="privacy_policy.html" class="btn">Read Full Privacy Policy</a>
+            </div>
+        </section>
+
+        <section id="terms">
+            <h2>Terms of Use</h2>
+            <p><em>Last updated: December 29, 2025</em></p>
+
+            <h3>Acceptance of Terms</h3>
+            <p>By accessing and using HabitNode, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the app.</p>
+
+            <h3>Use of Service</h3>
+            <p>HabitNode is intended for personal wellness and recovery tracking. You agree to use the service only for lawful purposes.</p>
+
+            <h3>Medical Disclaimer</h3>
+            <p class="highlight">HabitNode is not a medical device and should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare providers regarding any medical conditions or concerns.</p>
+
+            <h3>Limitation of Liability</h3>
+            <p>HabitNode is provided "as is" without warranties of any kind. We are not liable for any damages arising from your use of the service.</p>
+
+            <h3>Pricing</h3>
+            <p>Prices for in-app purchases, including the lifetime subscription, are subject to change at any time without prior notice.</p>
+
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="terms_of_use.html" class="btn">Read Full Terms of Use</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 HabitNode. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="support.html">Support</a> |
+            <a href="privacy_policy.html">Privacy Policy</a> |
+            <a href="terms_of_use.html">Terms of Use</a>
+        </p>
+    </footer>
+</body>
+</html>
